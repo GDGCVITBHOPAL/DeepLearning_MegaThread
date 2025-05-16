@@ -18,7 +18,7 @@ From loading pre-trained weights to understanding which layers to freeze, this p
 ---
 
 ### 🧠 2. **Understanding GPT-2 & the Rise of Transformers**  
-**Author:** *Nidhi*  
+**Author:** *Nidhi Rohra*  
 Nidhi broke down the **GPT-2 architecture** and the entire Transformer revolution with crystal-clear visuals and that golden example:  
 > “In ‘The cat sat on the mat,’ the word ‘sat’ pays attention to both ‘cat’ and ‘mat.’” 🤯
 
