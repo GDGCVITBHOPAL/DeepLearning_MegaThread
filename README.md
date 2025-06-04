@@ -4,7 +4,7 @@ Welcome to the official code and experiment hub for the **DeepLearning MegaThrea
 
 We’re talking **hands-on implementation**, **clear explanations**, and **models that actually work** — all wrapped into weekly drops designed to make deep learning more accessible, exciting, and deployable.
 
-> 📅 New blog every Friday! (And yes, we’re having a blast writing them.)
+---
 
 ## ✨ Blog Highlights
 
@@ -37,18 +37,51 @@ We experiment with **MobileViT-XXS** under multiple settings using Tiny ImageNet
 
 🔗 [Read the blog](https://medium.com/dsc-vit-bhopal/visiongpt-mobilevit-tiny-transformer-mighty-vision-b9a7f908d490)
 
+---
+
+### 🛡️ 4. **From Vulnerable to Vigilant: Adversarial Training for LLMs**  
+**Author:** *Samyak Waghdare*  
+This one’s all about **securing GPT-like models** against manipulation. Samyak walks you through how adversarial prompts work, how to generate them using libraries like `TextAttack`, and how adversarial training can improve model robustness — without sacrificing performance.
+
+🔗 [Read the blog](https://medium.com/dsc-vit-bhopal/from-vulnerable-to-vigilant-how-adversarial-training-strengthens-gpt-and-other-large-language-a1c99b68c744)
+
+---
+
+### 🤖 5. **Gemini-Senpai, Notice Our Humanity: Prompting LLMs to Sound Human**  
+**Author:** *Sahil Garje*  
+In this hilarious and thought-provoking finale, Sahil takes on the challenge of **humanizing GPT output** — testing dozens of prompting techniques and measuring them using GPTZero, a state-of-the-art AI detector. It's prompt engineering meets performance art.
+
+🔗 [Read the blog](https://medium.com/dsc-vit-bhopal/gemini-senpai-notice-our-humanity-80d772589125)
+
+---
+
 ## 📁 What's in This Repo?
 
-All the code, experiments, and notebooks from the series, neatly organized for you to run, tweak, and learn from.
+All the code, experiments, and notebooks from the series — neatly organized for you to run, tweak, and learn from.
 
 ### 📌 VisionGPT Experiments
 
+📂 Folder: `VisionGPT/`
+
 | Notebook | Description |
 |----------|-------------|
-| `mobilevit_xxs_scratch_64.ipynb` | Trains MobileViT-XXS from scratch on 64×64 Tiny ImageNet. |
-| `mobilevit_xxs_pretrained_64.ipynb` | Fine-tunes pretrained MobileViT-XXS on 64×64 input. |
-| `mobilevit_xxs_scratch_96.ipynb` | Trains from scratch on 96×96 resolution images. |
-| `mobilevit_xxs_pretrained_96.ipynb` | Fine-tunes pretrained MobileViT-XXS on higher-res input. |
+| `mobilevit_xxs_scratch_64.ipynb` | Trains MobileViT-XXS from scratch on 64×64 Tiny ImageNet images. |
+| `mobilevit_xxs_pretrained_64.ipynb` | Fine-tunes pretrained MobileViT-XXS on 64×64 Tiny ImageNet. |
+| `mobilevit_xxs_scratch_96.ipynb` | Trains MobileViT-XXS from scratch on 96×96 resolution input. |
+| `mobilevit_xxs_pretrained_96.ipynb` | Fine-tunes pretrained MobileViT-XXS on 96×96 Tiny ImageNet. |
+
+### 📌 Adversarial Training for GPT Experiments
+
+📂 Folder: `GPTAdversarial/`
+
+| Notebook | Description |
+|----------|-------------|
+| `gdgc-llm-adversarial.ipynb` | Core training + evaluation pipeline for adversarial robustness. |
+| `gdgc-llm-adversarial-training-fgsm.ipynb` | Implements FGSM adversarial training on LLMs. |
+| `gdgc-llm-adversarial-training-text-attack-deepbugword.ipynb` | Uses `TextAttack` with the DeepBugWord attack method. |
+| `gdgc-llm-adversarial-training-text-attack-textfooler.ipynb` | Uses `TextAttack` with the TextFooler method. |
+
+---
 
 ## 💬 Why This Series?
 
@@ -61,16 +94,14 @@ This series is our way of turning that box transparent.
 
 Whether you're a beginner or a practitioner brushing up on fundamentals, we’ve got something here for you.
 
+---
+
 ## 🙌 Meet the Team
 
-🧠 **Arihant Bhandari**
-
-🧠 **Sahil Garje**
-
-🧠 **Anaant Raj**
-
-🧠 **Nidhi Rohra**
-
+🧠 **Arihant Bhandari**  
+🧠 **Sahil Garje**  
+🧠 **Anaant Raj**  
+🧠 **Nidhi Rohra**  
 🧠 **Samyak Waghdare**
 
 We're the GDGC ML Team — on a mission to make deep learning more practical, fun, and open to all.
@@ -82,6 +113,7 @@ We're the GDGC ML Team — on a mission to make deep learning more practical, fu
 Spotted a bug, want to contribute, or just want to say hi?  
 Open an issue, fork the repo, or comment on the blog posts — we love hearing from fellow learners and builders.
 
----
+🧠 Happy Learning from the GDGC ML Team!
 
-Thanks for stopping by. Now go train something cool. 🧠💻🔥
+🎉 This wraps up our 5-part DeepLearning MegaThread series — thanks for following along!  
+We hope it sparked ideas, curiosity, and a love for building. Until next time! 💙
